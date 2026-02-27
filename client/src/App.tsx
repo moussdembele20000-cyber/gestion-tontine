@@ -16,6 +16,7 @@ import Parametres from "./pages/Parametres";
 import Paiement from "./pages/Paiement";
 import NotFound from "./pages/NotFound";
 import OfflineIndicator from "./components/OfflineIndicator";
+import IosInstallBanner from "./components/IosInstallBanner"; // ← import du bandeau iOS
 
 const queryClient = new QueryClient();
 
@@ -71,6 +72,7 @@ const App = () => (
         <AuthProvider>
           <OfflineIndicator />
           <ClientRoutes />
+          <IosInstallBanner /> {/* ← bandeau iOS ajouté */}
         </AuthProvider>
       </BrowserRouter>
     </TooltipProvider>

@@ -1,22 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Pour iOS PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TOUR - Gestion Tontine">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOUR - Gestion Tontine</title>
     <meta name="description" content="Application de gestion de tontine collaborative" />
     <meta name="author" content="TOUR" />
     <meta name="theme-color" content="#1a6b47" />
-    <link rel="apple-touch-icon" href="/pwa-192x192.png" />
 
+    <!-- Icônes personnalisées -->
+    <link rel="apple-touch-icon" href="/icons/pwa-192x192.png" />
+    <link rel="icon" type="image/png" href="/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/icons/favicon-16x16.png" sizes="16x16" />
+
+    <!-- Open Graph pour partage -->
     <meta property="og:title" content="TOUR - Gestion Tontine" />
     <meta property="og:description" content="Gérez votre tontine facilement" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="/icons/logo-og.png" />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:site" content="@TOURApp" />
+    <meta name="twitter:image" content="/icons/logo-og.png" />
   </head>
 
   <body>
