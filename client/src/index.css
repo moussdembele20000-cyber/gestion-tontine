@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 150 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 30% 10%;
+
+    --primary: 153 50% 28%;
+    --primary-foreground: 40 30% 97%;
+
+    --secondary: 42 80% 65%;
+    --secondary-foreground: 150 30% 10%;
+
+    --muted: 40 20% 92%;
+    --muted-foreground: 150 10% 45%;
+
+    --accent: 42 80% 65%;
+    --accent-foreground: 150 30% 10%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 145 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 150 30% 10%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 153 50% 28%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 153 50% 28%;
+    --sidebar-foreground: 40 30% 97%;
+    --sidebar-primary: 42 80% 65%;
+    --sidebar-primary-foreground: 150 30% 10%;
+    --sidebar-accent: 153 40% 22%;
+    --sidebar-accent-foreground: 40 30% 97%;
+    --sidebar-border: 153 40% 22%;
+    --sidebar-ring: 42 80% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .stat-card {
+    @apply bg-card rounded-xl p-4 shadow-sm border border-border;
+  }
+
+  .page-container {
+    @apply min-h-screen bg-background pb-20;
+  }
+
+  .page-header {
+    @apply bg-primary text-primary-foreground p-4 pb-6;
+  }
+
+  .btn-action {
+    @apply w-full py-4 text-lg font-semibold rounded-xl transition-all active:scale-[0.98];
+  }
+
+  .input-field {
+    @apply w-full h-14 text-lg rounded-xl border-2 border-border bg-card px-4
+    focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all;
+  }
+}
